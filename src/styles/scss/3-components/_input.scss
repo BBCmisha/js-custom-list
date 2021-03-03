@@ -1,0 +1,22 @@
+.settings__input {
+    height: 50px;
+    width: 410px;
+    padding: 0 10px;
+    margin-right: 10px;
+
+    border: none;
+    border-bottom: 3px solid $passive-element-color;
+
+    font-family: $general-font-family;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: $active-element-color;
+
+    &:active,
+    &:focus,
+    &:hover {
+        outline: none;
+        border-bottom: 3px solid $hover-element-color;
+    }
+}

@@ -1,0 +1,8 @@
+.button_active {
+    background-color: $active-element-color!important;
+    color: #fff!important;
+
+    &::before {
+        content: ''!important;
+    }
+}

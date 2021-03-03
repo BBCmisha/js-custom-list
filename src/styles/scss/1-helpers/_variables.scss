@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
+
+$general-font-family: 'Roboto', sans-serif;
+
+$active-element-color: #313131;
+$passive-element-color: lighten($active-element-color, 70%);
+$hover-element-color: #f57500;
+$hover-element-color__light: lighten($hover-element-color, 30%);

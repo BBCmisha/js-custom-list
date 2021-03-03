@@ -1,0 +1,50 @@
+.settings__button,
+.input__button {
+    position: relative;
+    min-width: 200px;
+    height: 50px;
+    margin-right: 10px;
+
+    border: none;
+    background: $passive-element-color;
+
+    font-family: $general-font-family;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: $active-element-color;
+
+    cursor: pointer;
+    transition: all .2s linear;
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+    &:hover {
+        background: $hover-element-color;
+        color: #fff;
+        &::before {
+            right: 6%;
+            opacity: 1;
+        }
+    }
+
+    &:active,
+    &:focus {
+        outline: none;
+    }
+
+    &::before {
+        content: '+';
+        position: absolute;
+        right: 0;
+        opacity: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        color: #fff;
+        font-size: 16px;
+
+        transition: all .5s ease-in-out;
+    }
+}

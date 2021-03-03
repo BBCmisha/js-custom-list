@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>testApp</title>
+    <link rel="stylesheet" href="./styles/main.min.css">
+</head>
+<body>
+    
+    <!-- Settings block -->
+    <div class="container">
+        <div class="settings">
+            <span class="settings__name" data-value="settingsSpan">.Settings</span>
+            
+            <div class="settings__item">
+                <div class="settings__sorter">
+                    <span class="settings__item__name" data-value="sorterSpan">.Sorting</span>
+                    <button class="settings__button" data-value="sortByIdButton">ID</button>
+                    <button class="settings__button" data-value="sortByNameButton">Name</button>
+                    <button class="settings__button" data-value="sortByAgeButton">Age</button>
+                </div>
+            </div>
+
+            <div class="div settings__item">
+                <div class="settings__sorter__by">
+                    <span class="settings__item__name" data-value="sorterBySpan">.Sorting by</span>
+                    <button class="settings__button" data-value="sortAscendingButton">By ascending</button>
+                    <button class="settings__button" data-value="sortDescendingButton">By descending</button>
+                </div>
+            </div>
+
+            <div class="settings__item">
+                <div class="settings__language">
+                    <span class="settings__item__name" data-value="languageSpan">.Language</span>
+                    <button class="settings__button" data-value="ruSwitcher">RU</button>
+                    <button class="settings__button" data-value="enSwitcher">ENG</button>
+                </div>
+            </div>
+
+            <div class="settings__item">
+                <div class="settings__views">
+                    <span class="settings__item__name" data-value="viewsSpan">.List type</span>
+                    <button class="settings__button" data-value="changeToTableButton">Table</button>
+                    <button class="settings__button" data-value="changeToPreviewButton">Previews</button>
+                </div>
+            </div>
+
+            <div class="settings__item">
+                <div class="settings__filter">
+                    <span class="settings__item__name" data-value="filterSpan">.Filter</span>
+                    <input class="settings__input" data-value="filterInputByName" placeholder="Enter name" type="text">
+                    <button class="input__button" data-value="filterButtonByName">Search</button>
+                </div>
+            </div>
+
+        </div><!-- /settings -->
+    </div><!-- /container -->
+
+    <!-- List block -->
+    <div class="container">
+        <div class="list-wrapper"></div>
+    </div>
+
+    <script type="module" src="./scripts/main.js"></script>
+</body>
+</html>
